@@ -102,7 +102,7 @@ export default {
         interval: 300000,
         // interval: this.interval,
       };
-      startMonitoring(
+      await startMonitoring(
         this.graph,
         this.contextId,
         this.network.id,

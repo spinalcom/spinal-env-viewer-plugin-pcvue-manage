@@ -1,6 +1,6 @@
 import {
   SpinalGraphService,
-  SPINAL_RELATION_LST_PTR_TYPE,
+  SPINAL_RELATION_PTR_LST_TYPE,
 } from "spinal-env-viewer-graph-service";
 import { FLOOR_TYPE } from "spinal-env-viewer-context-geographic-service/build/constants";
 import { SpinalBmsDevice } from "spinal-model-bmsnetwork";
@@ -35,7 +35,7 @@ async function createNodeLinks(parentId, childrenIds) {
         parentId,
         childId,
         SpinalBmsDevice.relationName,
-        SPINAL_RELATION_LST_PTR_TYPE
+        SPINAL_RELATION_PTR_LST_TYPE
       )
     );
 
